@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>批量開啟網頁</title>
+</head>
+<body>
+    <h1>批量開啟新聞連結</h1>
+    <button onclick="openAllLinks()">點擊此處開啟所有網頁</button>
+    <script>
+        function openAllLinks() {
+            const links = [
+                "https://reurl.cc/WArxDO",
+                "https://reurl.cc/V0DzNA",
+                "https://reurl.cc/M60OOv",
+                "https://reurl.cc/36oXX0",
+                "https://reurl.cc/ge2G6b",
+                "https://reurl.cc/V0Dz05",
+                "https://reurl.cc/86ov67",
+                "https://reurl.cc/36oXKj",
+                "https://reurl.cc/DKyjO6",
+                "https://reurl.cc/NbAQ9x",
+                "https://reurl.cc/yDrLWM",
+                "https://reurl.cc/96Gv8a",
+                "https://reurl.cc/kM1OzK",
+                "https://reurl.cc/vpdQOe",
+                "https://reurl.cc/96Gn6n",
+                "https://reurl.cc/lNoYe6",
+                "https://reurl.cc/eG3kWM",
+                "https://reurl.cc/461NQj",
+                "https://reurl.cc/r3DY5Z",
+                "https://reurl.cc/nq1YDe",
+                "https://reurl.cc/96GnRj"
+            ];
+            let delay = 500; // 延遲 500 毫秒
+            links.forEach((link, index) => {
+                setTimeout(() => {
+                    window.open(link, '_blank');
+                }, delay * index);
+            });
+        }
+    </script>
+</body>
+</html>
